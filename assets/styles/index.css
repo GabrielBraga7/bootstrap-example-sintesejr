@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+
+:root{
+    --main-color: #0d0cb5;
+    --secondary-color: #090986;
+}
+body{
+    font-family: 'Open Sans', sans-serif !important;
+}
+.customNavItem{
+    color: var(--main-color) !important;
+}
+
+.customNavItem:hover, .active {
+  border-radius:0.15rem;
+  color: white !important;
+  background-color: var(--main-color);
+}
