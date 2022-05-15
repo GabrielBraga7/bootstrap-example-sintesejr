@@ -15,24 +15,88 @@
   </head>
   <body>
     <section class="container">
-      <header class="d-flex flex-wrap justify-content-center align-items-center py-3 mb-4 border-bottom">
+      <header class="menu d-flex flex-wrap justify-content-center align-items-center py-3 mb-4 border-bottom">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
           <img src = "assets/img/SimonComLogo.PNG" width="130" alt="Imagem do Simon (mascote da Síntese) abraçando a logo"/>
-          <span class="fs-4">Bootstrap Simon Talk :D</span>
+          <span class="fs-2 title">Bootstrap Simon Talk :D</span>
         </a>
   
         <ul class="nav row d-flex flex-wrap">
-          <li class="nav-item col-sm-12 col-md-4"><a href="#" class="nav-link customNavItem" aria-current="page">Sobre</a></li>
-          <li class="nav-item col-sm-12 col-md-4"><a href="#" class="nav-link customNavItem">Setores</a></li>
-          <li class="nav-item col-sm-12 col-md-4"><a href="#" class="nav-link customNavItem">Portfolio</a></li>
+          <li class="nav-item col-sm-12 col-md-4"><a href="#" class="fs-4 nav-link customNavItem" aria-current="page">Sobre</a></li>
+          <li class="nav-item col-sm-12 col-md-4"><a href="#" class="fs-4 nav-link customNavItem">Setores</a></li>
+          <li class="nav-item col-sm-12 col-md-4"><a href="#" class="fs-4 nav-link customNavItem">Portfolio</a></li>
         </ul>
       </header>
     </section>
     <main>
-      <section class="container">
-        
-      
+      <section class="container p-5">
+        <div class="row d-flex flex-wrap align-items-center justify-content-center">
+          <div class="col-md-6 col-sm-12">
+            <h2>Sobre a Síntese</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
+            <img src="./assets/img/SimonFeliz.PNG" class="aboutImg">
+          </div>
+        </div>
       </section>
+      <section id="setores-container" class = "container p-5">
+        <div id="myCarousel" class="carousel slide p-5 d-flex flex-column align-items-center" data-bs-ride="carousel">
+          <h2 class="carousel-title">Setores</h2>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="setores carousel-item active">      
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h3 class="title">Projetos</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut diam quam nulla porttitor. Sed blandit libero volutpat sed cras. Felis eget nunc lobortis mattis aliquam faucibus purus</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="setores carousel-item">      
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Another example headline.</h1>
+                  <p>Some representative placeholder content for the second slide of the carousel.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="setores carousel-item">      
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>One more for good measure.</h1>
+                  <p>Some representative placeholder content for the third slide of this carousel.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      
+    
+    
+     
+    
     </main>
     
 

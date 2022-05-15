@@ -3,17 +3,46 @@
 
 :root{
     --main-color: #0d0cb5;
-    --secondary-color: #090986;
+    --secondary-color: #587cec;
+}
+h2, h3, h4, h5, h6, .title{
+    font-family: 'Oswald', sans-serif;
 }
 body{
     font-family: 'Open Sans', sans-serif !important;
 }
 .customNavItem{
     color: var(--main-color) !important;
+    text-align: center;
 }
 
 .customNavItem:hover, .active {
   border-radius:0.15rem;
   color: white !important;
   background-color: var(--main-color);
+}
+
+/*ABOUT*/
+.aboutImg{
+    width: 50%;
+}
+/*carousel*/
+#myCarousel{
+    height: 30rem;
+    border-radius: 0.8rem;
+    background-color: var(--secondary-color);
+}
+#setores-container{
+}
+.carousel-title{
+    color: white;
+}
+.setores{
+    height: 100%;
+}
+
+@media (min-width:768px) {
+    .menu{
+        max-height:23rem;
+    }
 }
