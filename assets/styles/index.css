@@ -4,6 +4,7 @@
 :root{
     --main-color: #0d0cb5;
     --secondary-color: #587cec;
+    box-sizing: border-box;
 }
 h2, h3, h4, h5, h6, .title{
     font-family: 'Oswald', sans-serif;
@@ -36,10 +37,24 @@ body{
 }
 .carousel-title{
     color: white;
+    padding: 0.6rem;
+    width: 18rem;
+    max-width: 100%;
+    background-color: rgba(13, 12, 181, 0.2);
+    text-align: center;
+    border-radius: 1rem;
+}
+.carousel-inner{
+    height: 100%;
 }
 .setores{
     height: 100%;
+    background-color: transparent;
 }
+.img-carousel{
+    height: 60%;
+}
+
 
 @media (min-width:768px) {
     .menu{

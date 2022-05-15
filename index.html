@@ -8,6 +8,8 @@
     <title>Síntese-boostrap</title>
     <!-- Icon -->
     <link rel="icon" href="./assets/img/Sintese_logo.png">
+    <!-- Icofont -->
+    <link rel="stylesheet" type="text/css" href="./assets/styles/icofont.min.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
     <!-- Custom CSS -->
@@ -22,9 +24,9 @@
         </a>
   
         <ul class="nav row d-flex flex-wrap">
-          <li class="nav-item col-sm-12 col-md-4"><a href="#" class="fs-4 nav-link customNavItem" aria-current="page">Sobre</a></li>
-          <li class="nav-item col-sm-12 col-md-4"><a href="#" class="fs-4 nav-link customNavItem">Setores</a></li>
-          <li class="nav-item col-sm-12 col-md-4"><a href="#" class="fs-4 nav-link customNavItem">Portfolio</a></li>
+          <li class="nav-item col-sm-12 col-md-4"><a href="#" class="fs-5 nav-link customNavItem" aria-current="page">Home</a></li>
+          <li class="nav-item col-sm-12 col-md-4"><a href="#" class="fs-5 nav-link customNavItem">Sobre</a></li>
+          <li class="nav-item col-sm-12 col-md-4"><a href="#" class="fs-5 nav-link customNavItem">Setores</a></li>
         </ul>
       </header>
     </section>
@@ -47,37 +49,47 @@
       </section>
       <section id="setores-container" class = "container p-5">
         <div id="myCarousel" class="carousel slide p-5 d-flex flex-column align-items-center" data-bs-ride="carousel">
-          <h2 class="carousel-title">Setores</h2>
+          <h2 class="carousel-title fs-1">Setores</h2>
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
           </div>
           <div class="carousel-inner">
             <div class="setores carousel-item active">      
               <div class="container">
-                <div class="carousel-caption text-start">
+                <div class="h-100 carousel-caption text-start d-flex flex-column align-items-center">
+                  <img class="img-carousel" src="./assets/img/SimonProjetos.PNG">
                   <h3 class="title">Projetos</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut diam quam nulla porttitor. Sed blandit libero volutpat sed cras. Felis eget nunc lobortis mattis aliquam faucibus purus</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
                 </div>
               </div>
             </div>
             <div class="setores carousel-item">      
               <div class="container">
-                <div class="carousel-caption">
-                  <h1>Another example headline.</h1>
-                  <p>Some representative placeholder content for the second slide of the carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                <div class="h-100 carousel-caption text-start d-flex flex-column align-items-center">
+                  <img class="img-carousel" src="./assets/img/SimonC&C.PNG">
+                  <h3 class="title">Criação e Comunicação</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut diam quam nulla porttitor. Sed blandit libero volutpat sed cras. Felis eget nunc lobortis mattis aliquam faucibus purus</p>
                 </div>
               </div>
             </div>
             <div class="setores carousel-item">      
               <div class="container">
-                <div class="carousel-caption text-end">
-                  <h1>One more for good measure.</h1>
-                  <p>Some representative placeholder content for the third slide of this carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                <div class="h-100 carousel-caption text-start d-flex flex-column align-items-center">
+                  <img class="img-carousel" src="./assets/img/SimonJFGP.png">
+                  <h3 class="title">Finanças e Pessoas</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut diam quam nulla porttitor. Sed blandit libero volutpat sed cras. Felis eget nunc lobortis mattis aliquam faucibus purus</p>
+                </div>
+              </div>
+            </div>
+            <div class="setores carousel-item">      
+              <div class="container">
+                <div class="h-100 carousel-caption text-start d-flex flex-column align-items-center">
+                  <img class="img-carousel" src="./assets/img/SimonVendas.PNG">
+                  <h3 class="title">Vendas</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis vitae et leo duis ut diam quam nulla porttitor. Sed blandit libero volutpat sed cras. Felis eget nunc lobortis mattis aliquam faucibus purus</p>
                 </div>
               </div>
             </div>
@@ -92,11 +104,22 @@
           </button>
         </div>
       </section>
+      <section class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">© Síntese Jr, 2022. Todos os direitos reservados</span>
+          </div>
       
-    
-    
-     
-    
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><i class="icofont-instagram icofont-md"></i></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="icofont-whatsapp p icofont-md"></i></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="icofont-facebook p icofont-md"></i></li>
+          </ul>
+        </footer>
+      </section>    
     </main>
     
 
